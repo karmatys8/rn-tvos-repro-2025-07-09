@@ -1,9 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, Pressable, StyleSheet, Text, useTVEventHandler, View } from 'react-native';
+
+const logger = () => console.log("log log")
 
 export default function App() {
+  useTVEventHandler(logger)
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Pressable style={{backgroundColor: "lightblue", padding: 8}}>
+        <Text dynamicTypeRamp="title1">Pressable</Text>
+      </Pressable>
     </View>
   );
 }
