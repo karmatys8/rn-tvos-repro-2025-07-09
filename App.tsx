@@ -7,9 +7,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Pressable style={{backgroundColor: "lightblue", padding: 8}}>
+      {/* uncomment below for logger to work */}
+      {/* <Pressable style={{backgroundColor: "lightblue", padding: 8}}>
         <Text dynamicTypeRamp="title1">Pressable</Text>
-      </Pressable>
+      </Pressable> */}
     </View>
   );
 }
